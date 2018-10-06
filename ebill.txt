@@ -1,0 +1,27 @@
+x=int(input("Enter units consumed:"))
+if(x<=50):
+      print("The rate is 0.50/unit")
+      bill=0.50*x
+      s=20/100*float(bill)
+      print("Additional surcharge is:",float(s))
+      print("your total Electric Bill is:",float(s)+float(bill))
+elif ((x>50) and (x<150)):
+      print("The rate is 0.75/unit")
+      bill=0.75*x
+      s=20/100*float(bill)
+      print("Additional surcharge is:",float(s))
+      print("your total Electric Bill is:",float(s)+float(bill))
+elif ((x>150) and (x<250)):
+      print("The rate is 1.20/unit")
+      bill=1.20*x
+      s=20/100*float(bill)
+      print("Additional surcharge is:",float(s))
+      print("your total Electric Bill is:",float(s)+float(bill))
+elif (x>=250):
+      print("The rate is 1.50/unit")
+      bill=1.50*x
+      s=20/100*float(bill)
+      print("Additional surcharge is:",float(s))
+      print("your total Electric Bill is:",float(s)+float(bill))
+else:
+      print("The values are invalid")
